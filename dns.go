@@ -3,12 +3,14 @@ package main
 import (
 	"fmt"
 	"log"
+	"net"
 	"os"
+	"strconv"
 	"strings"
+
+	"github.com/fatih/color"
 	"github.com/miekg/dns"
 	"github.com/olekukonko/tablewriter"
-	"github.com/fatih/color"
-	"strconv"
 )
 
 var addressMap = make(map[string]string)
